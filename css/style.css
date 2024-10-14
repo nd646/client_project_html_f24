@@ -7,7 +7,7 @@ body{
 }
 
 h1{
-    font-size: 18px;
+    font-size: 20px;
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
     color: #ffffff;
@@ -34,7 +34,7 @@ p{
 }
 
 .active{
-    color: #CFC096;
+    color: #FFCB05;
     border-style: solid;
     border-width: 2px;
     border-color: #ffffff;
@@ -42,11 +42,10 @@ p{
 }
 
 .header{
+    font-size: 16px;
+    font-family:Arial, Helvetica, sans-serif;
     display: grid;
     grid-template-columns: 1fr;
-    border-style: solid;
-    border-width: 2px;
-    border-color: #000000;
     justify-items: center;
     text-align: center;
     background-color: #00274C;
