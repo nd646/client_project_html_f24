@@ -9,7 +9,7 @@
 </head>
 <body>
     <div class="skip"><a href="#main">Skip to Main Content</a></div>
-    <header class = "header" id = "header">
+    <header class = "home_header" id = "header">
         <img src="images/UMSI_signature_vertical_informal_solidblue.jpg" alt="UMSI Logo">
         <nav>
             <ul>
@@ -21,15 +21,14 @@
             </ul>
             <br>
             <h1>Student Success Portal</h1>
-            <br>
         </nav>
 
+
     </header>
-    <br>
-    <main>
+    <main class="home_container" id = "main">
+
         <section>
             <h2>Welcome to the UM Grad Success Navigator</h2>
-            <br>
             <p> Your Comprehensive Guide to Resources for Graduate School Success</p>
             <p>This guide is set up to help you be successul inside and outside of the classroom and we have included the following resources throughout our site:</p>
             <ol>
@@ -39,7 +38,26 @@
                 <li>Life Outside Classroom</li>
                 <li>Contact</li>
             </ol>
+            <hr>
+            <p>Join the newsletter to get updates on UMSI and other campus events!</p>
+            <br>
+            <form action="https://formspree.io/f/mjkvywjg" method="POST" id = "form">
+                <label>
+                    Your name:
+                    <input type="name" name="name">
+                </label>
+                <br>
+                <br>
+                <label>
+                    Your email:
+                    <input type="email" name="email">
+                </label>
+                <br>
+                <br>
+                <button type="submit">Submit</button>
+            </form>
         </section>
+
         <section>
             <h2>Physical Health</h2>
             <p>Keeping your body healthy is essential for success. The University of Michigan offers numerous resources to help you stay in top physical condition:</p>
@@ -48,6 +66,7 @@
                     <img src="images/UHS.jpg" alt="University Health Services building">
                     <figcaption>University Health Services Building</figcaption>
                 </figure>
+                <br>
                 <h3>University Health Service (UHS)</h3>
                 <p>University Health Service (UHS): Access comprehensive medical care, including routine check-ups, vaccinations, and specialist referrals.</p>
             </article>
@@ -57,12 +76,14 @@
                     <img src="images/UMSI_CampusFall_UMSIBackpack_02.jpg" alt="A student wears a UMSI backpack in fall on the drag.">
                     <figcaption>UMSI out in the fall!</figcaption>
                 </figure>
+                <br>
                 <h3>Recreational Sports</h3>
                 <p>Participate in various fitness programs, sports clubs, and use of gym facilities to stay active and healthy.</p>
             </article>
         </section>
         <br>
-        <section>
+        <section id="mental_health">
+            <br>
             <h2>Mental Health</h2>
             <p>Maintaining your mental well-being is crucial for thriving in graduate school. Here are resources to support your mental health:</p>
             <article>
@@ -85,7 +106,6 @@
                 <p> Join peer support groups for shared experiences and collective coping strategies.</p>
             </article>
         </section>
-        <br>
         
         <section id="life-outside-classroom">
             <h2>Life Outside the Classroom</h2>
@@ -107,7 +127,10 @@
     <br>
     <footer>
         <br>
-        <p>MSI Academic Advising | <a href="https://sites.google.com/umich.edu/msiacademicadvising/student-support-resources">UMSI Academic Advising </a></p>
+        <p> <span id="year"></span> MSI Academic Advising | <a href="https://sites.google.com/umich.edu/msiacademicadvising/student-support-resources">UMSI Academic Advising </a></p>
+        <script>
+            document.getElementById("year").innerHTML = new Date().getFullYear();
+        </script>
         <br>
     </footer>
 </body>
